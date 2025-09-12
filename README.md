@@ -19,8 +19,6 @@ Mục tiêu của môn học:
 - **HTML5**  
 - **CSS3**  
 - **JavaScript**  
-- (Optional) Framework/Library: *Bootstrap / Tailwind / React*  
-
 ---
 
 ## 📂 Cấu trúc thư mục  
