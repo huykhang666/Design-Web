@@ -34,6 +34,6 @@ Mục tiêu của môn học:
 
 📧 Liên hệ
 
-Email: abc@xyz.com
+Email: huykhang11206@gmail.com
 
 Trường: Đại học Giao thông Vận tải TP.HCM - Cơ sở 2
