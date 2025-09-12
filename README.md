@@ -24,11 +24,13 @@ Mục tiêu của môn học:
 ---
 
 ## 📂 Cấu trúc thư mục  
+`` bash
 📦 web-design
 ┣ 📁
 ┣ 📁 
 ┣ 📁 
 ┗ 📄 README.md 
+``
 
 📧 Liên hệ
 
