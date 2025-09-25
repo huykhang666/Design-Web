@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.poem {
+  width:600px;
+  border: 1px solid #000;
+  padding: 20px;
+  background-color: #ffffe0; 
+  box-sizing: border-box; 
+}
+
+.title {
+  text-align: center;
+  background-color: pink;
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+  padding: 5px;
+}
+
+.blue {
+  color: blue;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.red {
+  color: red;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.green {
+  color: green;
+  text-align: center;
+  margin: 5px 0;
+}

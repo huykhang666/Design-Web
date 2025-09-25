@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng ký du lịch</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+    }
+    .form-container {
+        
+        width: 650px;
+        margin: 30px auto;
+        border: 1px solid #000;
+        background: #ffffcc;
+        padding: 20px;
+    }
+    h2 {
+        text-align: center;
+        color: blue;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    td {
+        border: 2px solid #0696d8;
+
+        padding: 6px;
+        vertical-align: top;
+    }
+    input[type="text"], select, textarea {
+        padding: 5px;
+        border: 1px solid #ccc;
+        background: #ffffcc;
+    }
+    textarea {
+        width: 95%;
+        height: 60px;
+    }
+    .checkbox, .radio {
+        margin-top: 5px;
+    }
+    .btn {
+        display: block;
+        margin: 15px auto;
+        padding: 8px 20px;
+        background: #ccc;
+        border: 1px solid #000;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .success {
+        text-align: center;
+        color: orange;
+        font-weight: bold;
+    }
+   
+    fieldset {
+        border: 2px solid brown;
+        padding: 10px;
+        background: #ffffcc;
+    }
+    legend {
+        color: brown;
+        font-style: italic;
+        font-weight: bold;
+    }
+    .field-input {
+        margin: 0 10px;
+    }
+    .field-input input {
+        width: 50px;
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Đăng ký du lịch</h2>
+    <form>
+      <table>
+        <tr>
+          <td>Họ và tên</td>
+          <td><input type="text" value="Pham Ngoc Cẩm Đào"></td>
+        </tr>
+        <tr>
+          <td>Địa chỉ</td>
+          <td><input type="text" value="227 Nguyễn Văn Cừ"></td>
+        </tr>
+        <tr>
+          <td>Điện thoại</td>
+          <td><input type="text" value="8351056"></td>
+        </tr>
+        <tr>
+          <td>Khách Việt Nam</td>
+          <td><input type="checkbox" checked></td>
+        </tr>
+        <tr>
+          <td>Chọn tour</td>
+          <td>
+            <select>
+              <option>Buôn mê thuột - Gia lai - Kontum</option>
+              <option>Đà Nẵng - Huế - Quảng Bình</option>
+              <option>Hạ Long - Cát Bà</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Phương tiện</td>
+          <td class="radio">
+            <input type="radio" name="pt" checked> Máy bay
+            <input type="radio" name="pt"> Xe ô tô
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <fieldset>
+              <legend>Số lượng đoàn khách</legend>
+              <span class="field-input">Người lớn <input type="text" value="6"></span>
+              <span class="field-input">Trẻ em <input type="text" value="4"></span>
+            </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td>Ghi chú thêm</td>
+          <td>
+            <textarea>Có 2 trẻ em dưới 6 tuổi
+Có 2 người ăn chay
+            </textarea>
+          </td>
+        </tr>
+      </table>
+      <button type="submit" class="btn">Đồng ý</button>
+      <div class="success">Bạn đã đăng ký thành công!!!</div>
+    </form>
+  </div>
+
+</body>
+</html>

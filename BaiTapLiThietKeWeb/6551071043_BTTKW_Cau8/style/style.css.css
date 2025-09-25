@@ -1,0 +1,32 @@
+h1{
+    color: green;
+    font-size: 20px;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+td{
+    padding: 5px;
+    border: 1px solid black;
+    color: rgb(32, 148, 21);
+    background-color: rgb(104, 255, 10);
+}
+.i1{
+    width: 80%;
+}
+.i2{
+    width: 65%;
+}
+.i3{
+    width: 50%;
+}
+.i4{
+    width: 30%;
+}
+div{
+    border: 2px solid black;
+    width: 45%;
+}

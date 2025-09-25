@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#menu {
+    background-color: #f98602;
+    font-size: 14px;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+}
+
+#menu li {
+    border-right: 1px solid #ccc;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 36px;
+    font-weight: 500;
+    padding: 9px 30px;
+}
+
+#menu li:hover a {
+    background-color: #ccc;
+    color: #000;
+}
+
+#main {
+    display: flex;
+    margin-top: 10px;
+}
+
+#left {
+    width: 35%;
+}
+
+#sidebar {
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+}
+
+#sidebar h3 {
+    background-color: #f98602;
+    color: #fff;
+    padding: 6px;
+}
+
+#sidebar li {
+    margin: 6px 8px;
+    list-style: none;
+    background-color: #e5e5e5;
+    padding: 4px;
+}
+
+#sidebar li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+
+#sidebar_2 {
+    border: 1px solid #ccc;
+}
+
+#sidebar_2 h3 {
+    background-color: #f98602;
+    color: #fff;
+    padding: 6px;
+}
+
+#sidebar_2 select {
+    width: 90%;
+    margin: 6px;
+    padding: 4px;
+}
+
+.btn-timkiem {
+    margin: 12px 8px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f98602;
+    color: #fff;
+    cursor: pointer;
+}
+
+#content {
+    width: 98%;
+    display: flex;
+    border: 1px solid #ccc;
+    height: 324px;
+    margin-left: 16px;
+    float: right;
+}
+
+#content .anh_content {
+    margin-left: 20%;
+    width: 30%;
+    height: 286px;
+    display: block;
+    margin-top: 36px;
+
+}
+
+#content .content-box-1 {
+    margin: 36px;
+    width: 40%;
+    float: right;
+}
+
+#container-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-box {
+    display: flex;
+    text-align: center;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.container-box .box-main {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-left: 24px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+#footer {
+    margin-top: 16px;
+    text-align: center;
+    background-color: #f98602;
+    border: 1px solid #000;
+}
