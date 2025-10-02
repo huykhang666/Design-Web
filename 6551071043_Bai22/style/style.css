@@ -1,0 +1,21 @@
+#container {
+    width: 400px;        
+    margin: 50px auto;  
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+#result {
+    font-weight: bold;
+    color: blue;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.4;
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+
