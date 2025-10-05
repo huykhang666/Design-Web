@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau 13</title>
+</head>
+<body>
+    <h2>Các số nguyên tố nhỏ hơn n:</h2>
+    <div id="result"></div>
+</body>
+<script>
+    var n = parseInt(prompt("Nhap n: "));
+    var resultDiv = document.getElementById("result");
+    var primes = "";
+    for(var i = 2; i<n;i++) {
+        var isPrime = true;
+        for(var j = 2 ; j<=Math.sqrt(i);j++) {
+                if(i % j == 0) {
+                    isPrime = false;
+                    break;
+                }
+        }
+    if(isPrime) {
+        primes += i + " ";
+    }
+    }
+
+    resultDiv.innerHTML = primes;
+</script>
+</html>

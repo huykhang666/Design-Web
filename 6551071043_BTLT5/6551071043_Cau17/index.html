@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển nhị phân sang thập phân</title>
+</head>
+<body>
+    <h2>Chuyển số nhị phân sang số thập phân</h2>
+    <input type="text" id="binaryInput" placeholder="Nhập số nhị phân">
+    <button onclick="convertBinary()">Chuyển đổi</button>
+    <p id="result">Kết quả: </p>
+
+    <script>
+        function convertBinary() {
+            // Lấy giá trị từ input
+            let binaryStr = document.getElementById("binaryInput").value;
+
+            // Kiểm tra chuỗi hợp lệ chỉ chứa 0 và 1
+            if (!/^[01]+$/.test(binaryStr)) {
+                document.getElementById("result").textContent = "Vui lòng nhập số nhị phân hợp lệ!";
+                return;
+            }
+
+            // Chuyển nhị phân sang thập phân
+            let decimal = 0;
+            let len = binaryStr.length;
+
+            for (let i = 0; i < len; i++) {
+                // Lấy chữ số nhị phân từ trái sang phải
+                let bit = Number(binaryStr[len - 1 - i]);
+                decimal += bit * Math.pow(2, i); // sử dụng Math.pow
+            }
+
+            // Hiển thị kết quả ở vị trí <p id="result">
+            document.getElementById("result").textContent = `Kết quả: ${decimal}`;
+        }
+    </script>
+</body>
+</html>

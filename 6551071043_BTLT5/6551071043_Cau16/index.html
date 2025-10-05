@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau 16</title>
+</head>
+<body>
+    <h2>Thông tin hình trụ</h2>
+    <div id="info"></div>
+</body>
+<script>
+
+let hinhTru = {
+    radius: 10,
+    height: 15
+};
+
+let infoDiv = document.getElementById("info");
+
+let theTich = Math.PI * hinhTru.radius**2 * hinhTru.height;
+infoDiv.innerHTML = "<b>Thể tích hình trụ:</b> " + theTich.toFixed(2) + "<br>";
+hinhTru.height = 30;
+
+let dienTich = 2*Math.PI * hinhTru.radius * (hinhTru.radius + hinhTru.height);
+infoDiv.innerHTML += "<b>Diện tích toàn phần sau khi height = 30: </b>" + dienTich.toFixed(2);
+
+</script>
+</html>
