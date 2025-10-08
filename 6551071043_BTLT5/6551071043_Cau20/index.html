@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị ngày giờ hiện tại</title>
+</head>
+<body>
+    <script>
+        // Khai báo đối tượng Date để lấy thời gian hiện tại
+        var now = new Date();
+
+        // Lấy các thành phần
+        var day = now.getDate();            // Ngày (1-31)
+        var month = now.getMonth() + 1;     // Tháng (0-11, nên +1)
+        var year = now.getFullYear();       // Năm
+        var hours = now.getHours();         // Giờ (0-23)
+        var minutes = now.getMinutes();     // Phút (0-59)
+        var seconds = now.getSeconds();     // Giây (0-59)
+
+        // Tạo chuỗi định dạng "dd/mm/yyyy hh:mm:ss"
+        var datetime ="Ngyày: " + day + "/" + month + "/" + year + " " + "Giờ " + 
+                       hours + ":" + minutes + ":" + seconds;
+
+        // Hiển thị bằng hộp thoại alert
+        alert(datetime);
+    </script>
+</body>
+</html>

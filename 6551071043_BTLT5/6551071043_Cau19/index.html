@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau 19</title>
+</head>
+<body>
+    <h2>Máy tính lãi suất đơn giản</h2>
+</body>
+<script>
+     var principal = parseFloat(prompt("Nhập số tiền gốc (VND):"));
+    var rate = parseFloat(prompt("Nhập lãi suất hàng năm (%):"));
+    var years = parseInt(prompt("Nhập số năm đầu tư:"));
+
+    var total = principal * (1 + (rate / 100) * years);
+
+    total = Math.round(total * 100) / 100;
+
+    document.write("<p>Số tiền sau " + years + " năm là: " + total + " VND</p>");
+</script>
+</html>
