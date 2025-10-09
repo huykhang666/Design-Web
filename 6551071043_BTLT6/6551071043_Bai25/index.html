@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>THỰC ĐƠN</title>
+  <link rel="stylesheet" href="/6551071043_BTLT5/6551071043_BTLT6/6551071043_Bai25/style/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>THỰC ĐƠN</h2>
+
+    <table class="menu">
+      <tr>
+        <th>Thức ăn</th>
+        <th>Nước uống</th>
+        <th>Thời điểm</th>
+      </tr>
+      <tr>
+        <td>
+          <label><input type="checkbox" name="food" value="Bún bò"> Bún bò</label><br>
+          <label><input type="checkbox" name="food" value="Hủ tiếu"> Hủ tiếu</label><br>
+          <label><input type="checkbox" name="food" value="Bánh canh"> Bánh canh</label><br>
+          <label><input type="checkbox" name="food" value="Phở bò"> Phở bò</label><br>
+          <label><input type="checkbox" name="food" value="Nui"> Nui</label><br>
+          <label><input type="checkbox" name="food" value="Bánh mì thịt"> Bánh mì thịt</label><br>
+          <label><input type="checkbox" name="food" value="Bánh cuốn"> Bánh cuốn</label>
+        </td>
+        <td>
+          <label><input type="checkbox" name="drink" value="Cà phê đá"> Cà phê đá</label><br>
+          <label><input type="checkbox" name="drink" value="Cà phê sữa đá"> Cà phê sữa đá</label><br>
+          <label><input type="checkbox" name="drink" value="Chanh dây"> Chanh dây</label><br>
+          <label><input type="checkbox" name="drink" value="Chanh muối"> Chanh muối</label><br>
+          <label><input type="checkbox" name="drink" value="Xí muội"> Xí muội</label><br>
+          <label><input type="checkbox" name="drink" value="Cam vắt"> Cam vắt</label>
+        </td>
+        <td>
+          <label><input type="radio" name="time" value="day" checked> Ban ngày</label><br>
+          <label><input type="radio" name="time" value="night"> Ban đêm</label>
+        </td>
+      </tr>
+    </table>
+
+    <button id="btnTinh">Tính tiền</button>
+
+    <table id="result">
+      <tr>
+        <th>Các món đã dùng</th>
+        <th>Tiền</th>
+      </tr>
+      <tbody></tbody>
+      <tr>
+        <td><b>Tổng tiền</b></td>
+        <td id="tong">0 đồng</td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    const priceList = {
+      "Bún bò": 20000,
+      "Hủ tiếu": 18000,
+      "Bánh canh": 17000,
+      "Phở bò": 19000,
+      "Nui": 15000,
+      "Bánh mì thịt": 15000,
+      "Bánh cuốn": 16000,
+      "Cà phê đá": 12000,
+      "Cà phê sữa đá": 15000,
+      "Chanh dây": 13000,
+      "Chanh muối": 10000,
+      "Xí muội": 12000,
+      "Cam vắt": 17000
+    };
+
+    document.getElementById("btnTinh").onclick = function() {
+      const foods = document.querySelectorAll('input[name="food"]:checked');
+      const drinks = document.querySelectorAll('input[name="drink"]:checked');
+      const time = document.querySelector('input[name="time"]:checked').value;
+
+      const tbody = document.querySelector("#result tbody");
+      tbody.innerHTML = "";
+      let tong = 0;
+
+      [...foods, ...drinks].forEach(item => {
+        const ten = item.value;
+        const gia = priceList[ten];
+        tong += gia;
+        tbody.innerHTML += `<tr><td>${ten}</td><td>${gia.toLocaleString()} đ</td></tr>`;
+      });
+
+      if (time === "night") tong *= 1.1;
+
+      document.getElementById("tong").innerText = tong.toLocaleString() + " đồng";
+    };
+  </script>
+</body>
+</html>

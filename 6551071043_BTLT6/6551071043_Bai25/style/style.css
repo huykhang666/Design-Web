@@ -1,0 +1,74 @@
+body {
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 450px;
+  margin: 30px auto;
+  background-color: #eaff00; /* nền vàng chanh */
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+}
+
+.menu, #result {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.menu th {
+  background-color: #00aaff;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.menu td {
+  border: 1px solid #000;
+  vertical-align: top;
+  padding: 5px;
+  background-color: #f8fff2;
+  text-align: left;
+}
+
+#btnTinh {
+  margin: 10px 0;
+  padding: 5px 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+#btnTinh:hover {
+  background-color: #c8f8c8;
+}
+
+#result th {
+  background-color: #00aaff;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+#result td {
+  border: 1px solid #000;
+  padding: 4px;
+  background-color: #e9ffff;
+  text-align: left;
+}
+
+#tong {
+  font-weight: bold;
+}
