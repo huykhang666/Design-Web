@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>JS DOM paragraph style (Câu 28)</title>
+</head>
+<body>
+  <p id="text">JavaScript Exercises - w3resource</p>
+
+  <div>
+    <button id="jsstyle" onclick="js_style()">Style</button>
+  </div>
+
+  <script>
+    function js_style() {
+      const p = document.getElementById('text');
+      p.style.fontSize = '24px';
+      p.style.fontFamily = 'Arial, Helvetica, sans-serif';
+      p.style.color = '#d35400';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Remove items from a dropdown list (Câu 31)</title>
+  <style>body {margin: 30px;}</style>
+</head>
+<body>
+  <form>
+    <select id="colorSelect">
+      <option>Red</option>
+      <option>Green</option>
+      <option>White</option>
+      <option>Black</option>
+    </select>
+    <input type="button" onclick="removecolor()" value="Select and Remove">
+  </form>
+
+  <script>
+    function removecolor() {
+      const sel = document.getElementById('colorSelect');
+      const idx = sel.selectedIndex;
+      if (idx >= 0) {
+        const removed = sel.options[idx].text;
+        sel.remove(idx);
+        alert('Đã xóa: ' + removed);
+      } else {
+        alert('Vui lòng chọn một mục trước khi xóa.');
+      }
+    }
+  </script>
+</body>
+</html>
