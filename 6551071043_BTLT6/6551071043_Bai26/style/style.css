@@ -1,0 +1,29 @@
+#container {
+    border: 1px solid black;
+    text-align: center;
+    width: 30%;
+    
+}
+table {
+   background-color: aqua;
+   margin: auto;
+   border-collapse: collapse;
+
+}
+
+hr {
+    background-color: antiquewhite;
+    font-weight: bold;
+}
+
+.Title {
+    background-color: antiquewhite;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    color: white;
+    background-color: tomato;
+}
